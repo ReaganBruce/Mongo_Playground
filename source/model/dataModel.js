@@ -10,7 +10,7 @@ const DataSchema = new mongoose.Schema({
         state: String,
         zip: {
             type: Number,
-            length: 5
+            required: true,
         }
     },
     interests: [String, String, String],
